@@ -1,0 +1,56 @@
+<html>
+<head>
+		<meta charset="utf-8" />
+		<meta name="L'auteur" content="ton identité">
+		<link rel="stylesheet" href="css.css" />
+		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<title> Le verre trempé </title>
+</head>
+
+<body>
+
+<header id="debut">
+<h1>Le verre trempé</h1>
+</header>
+
+<nav id="menu">
+	  <a href="page1.html"><input class="button" type="button" name="Définition"value="Définition"/></a>
+	  <a href="page2.html"><input class="button" type="button" name="Historique"value="Historique"/></a>
+	  <a href="page3.html"><input class="button" type="button" name="Mise en oeuvre"value="Mise en oeuvre"/></a>
+	  <a href="page4.html"><input class="button" type="button" name="Applications"value="Applications"/></a>
+	 <script class="java">
+			var positionElementInPage = $('#menu').offset().top;
+			$(window).scroll(
+				function() {
+					if ($(window).scrollTop() >= positionElementInPage) {
+						$('#menu').addClass("floatable");
+					}
+					else {
+						$('#menu').removeClass("floatable");
+					}
+				}
+			);
+		</script>
+</nav>
+
+<section>
+<h2>Définition</h2>
+<p>
+<img class="imgR" src="images/intro1.jpg" alt="erreur" align=right width=300px border=shadow >
+Le verre trempé est un verre de sécurité. Il est utilisé pour la conception d'éléments en verre prévus pour recevoir des chocs ou utilisé dans des zones à risque. Pourquoi ? Premièrement, car le verre trempé est plus résistant que le verre classique ou le verre flotté. C’est grâce à son processus de fabrication particulier qu’il possède de meilleures caractéristiques mécaniques que nous détaillerons dans la troisième partie.
+De ce fait, il est aujourd’hui obligatoire d’utiliser ce type de verre pour les grands immeubles, par exemple, qui sont plus souvent et violemment soumis à la pression exercée par le vent ou la neige.
+<br><br><br>
+<img class="imgL" src="images/intro2.jpg" alt="erreur" align=left width=250px border=shadow>
+Il est également plus sûr lors de la destruction de la vitre. Contrairement aux verres classiques qui se brisent en morceaux tranchants et dangereux, le verre trempé se brise plus difficilement en morceaux, des morceaux émoussés qui sont moins tranchants et plus petits, ce qui réduit grandement le risque de blessure. C'est aujourd'hui le type de verre le plus répandu partout dans le monde.
+<br><br>
+</p>
+
+
+
+
+<footer>
+	<a href="#debut"><input class="button2" type="button" name="Haut de page"value="Haut de page"/></a>
+</footer>
+</section>
+</body>
+</html>
